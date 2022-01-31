@@ -1,5 +1,7 @@
 #include <iostream>
 #include "FinalClasses/GobjectCat.h"
+#include "FinalClasses/CppCat.h"
+
 int main() {
     //default cat
     GobjectCat *gobjectCat = gobject_cat_new();
@@ -26,6 +28,18 @@ int main() {
 
     g_free(catName);
     g_free(cat1Name);
+
+    CppCat cppCat = CppCat();
+    cppCat.meow();
+
+    CppCat cppCat1 = CppCat();
+    cppCat1.setName("Rumba");
+    cppCat1.meow();
+
+    printf("%s and %s are cats\n",
+           cppCat.getName().c_str(),
+           cppCat1.getName().c_str());
+
 
     return 0;
 }

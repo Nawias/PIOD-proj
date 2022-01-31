@@ -15,7 +15,7 @@ endif (GLIB_FOUND)
 
 
 
-add_executable(programowanie main.cpp FinalClasses/GobjectCat.cpp FinalClasses/GobjectCat.h)
+add_executable(programowanie main.cpp FinalClasses/GobjectCat.cpp FinalClasses/GobjectCat.h FinalClasses/CppCat.cpp FinalClasses/CppCat.h)
 
 target_include_directories(programowanie PRIVATE ${GLIB_INCLUDE_DIRS})
 include_directories(${GLIB_INCLUDE_DIRS})
